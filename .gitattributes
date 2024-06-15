@@ -1,0 +1,28 @@
+# Automatically normalize line endings for all text files
+* text=auto
+
+# Force Unix-style line endings for specific file types
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+
+# Force Windows-style line endings for specific file types
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Ensure binary files are not modified by Git's line ending normalization
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.gz binary
+*.pdf binary
+
+# Custom settings for specific files
+# e.g., Force Unix-style line endings for package.json files
+package.json text eol=lf
+package-lock.json text eol=lf
